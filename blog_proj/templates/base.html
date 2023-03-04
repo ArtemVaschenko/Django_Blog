@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+          background: linear-gradient(to right, #ffdfb0, #41b6d7);
+        }
+
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+
+</head>
+<body>
+<html>
+<head>
+    <title>Django blog</title>
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'home' %}">Django blog</a></h1>
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+</body>
+</html>
+</body>
+</html>
+
+
+
